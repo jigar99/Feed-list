@@ -32,7 +32,8 @@ public final class RemoteFeedLoader {
         case invalidData
     }
     
-    public enum Results : Equatable {
+    public enum Results {
+        
         case success([FeedItem])
         case failure(Error)
     }

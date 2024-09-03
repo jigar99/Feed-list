@@ -7,7 +7,23 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+  
+    
+    init(){
+       
+        #if Dev
+        print("Dev")
+        #elseif Prod
+        print("PRod")
+        #elseif Staging
+                print("Staging")
+        #endif
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
